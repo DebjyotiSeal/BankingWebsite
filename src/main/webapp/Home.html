@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debjyoti Bank</title>
+    <!-- <link rel="stylesheet" href="Home.css"> -->
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url("Image/bank-in-city-business-urban-landscape-with-bank-building-office-consulting-financial-center-vector-background-2FK21JP.jpg");
+    background-size: cover;
+    background-position: center;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: monospace;
+    font-size: 20px;
+}
+#text{
+    height: 60px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    font-family: cursive;
+}
+#main{
+    height: 600px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#side{
+    height:  600px;
+    width: 50%; 
+}
+#contain{
+    height:  600px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    height: 30px;
+    width: 300px;
+    margin-top: 20px;
+   border-radius: 7px ;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0 0 20px #646161;
+    background-color: #a39a9a;
+}
+button:hover{
+    background-color: rgb(39, 41, 41);
+    box-shadow: 0 0 10px #888;
+    height: 35px;
+    width: 350px;
+}
+
+button:hover>a{
+    color: antiquewhite;
+    font-size: 25px;
+}
+    </style>
+</head>
+<body>
+    <div id="text"><h1>Welcome to Debjyoti Bank</h1></div>
+    <div id="main">
+        <div id="side"></div>
+        <div id="contain">
+            <button class="btn"><a href="customersignup.html">Coustomer Signup</a></button>
+            <button class="btn"><a href="CustomerLogin.html">Coustomer Login</a></button>
+            <button class="btn"><a href="adminLogin.html">Admin Login</a></button>
+        </div>
+    </div>
+   
+</body>
+</html>

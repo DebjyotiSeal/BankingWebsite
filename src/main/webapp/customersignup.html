@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+#text{
+    background: linear-gradient( rgb(119, 117, 117) 40%, rgb(110, 103, 103) 60%, rgb(197, 191, 191) 100%);
+    color: beige;
+    height: 50px;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 20px #131212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    
+    box-shadow: 0 0 20px #7a7878;
+}
+#main{
+    height: 600px;
+    width: auto;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Image/20944139.jpg");
+    background-size: cover;
+    background-position: center;
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 350px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+    color: black;
+    min-width: 100px; 
+    margin-right: 40px;
+    font-weight: bolder;
+    text-align: end;
+}
+#btn{
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button
+{
+    height: 30px;
+    width: 150px;
+   	border-radius: 7px ;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0 0 20px #646161;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: bisque;
+}
+button:hover{
+    background-color: rgb(91, 104, 104);
+    box-shadow: 0 0 20px #646161;
+    color: antiquewhite;
+    height: 35px;
+    width: 170px;
+    font-size: 20px;
+}
+::placeholder {
+    color: dimgray;
+    text-align: center;
+    font-size: small;
+}
+
+#side1{
+    height: 600px;;
+    width: 50%;
+   
+   
+}
+#side2{
+    height: 600px;;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gender{
+    height: 40px;
+    width: 500px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    /* border: 2px solid #000;  */
+    margin-right: 10px;
+  }
+  
+  input[type="radio"]:hover {
+    border-color: #f81010; 
+  }
+  #in{
+    height: 400px;
+    width: 600px;
+    box-shadow: 0 0 20px #7a7878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   background-color: whitesmoke;
+  }
+  
+    </style>
+</head>
+<body>
+    <div id="text"><h1>Welcome to Signup</h1> </div>
+    
+    <div id="main">
+
+        <div id="side1"></div>
+        <div id="side2">
+			<form action="customersignup">
+            <div id="in">
+                <div id="name">
+                    <label for="name1">Name:</label>
+                    <input type="text" name="name" id="name1" placeholder="Enter Your Name">
+                </div>
+                <div id="mobile">
+                    <label for="mobile1">Mobile:</label>
+                    <input type="tel" name="mob" id="mobile1" placeholder="Enter Your Mobile Number">
+                </div>
+                <div id="email">
+                    <label for="email1">Email:</label>
+                    <input type="email" name="email" id="email1" placeholder="Enter Your Email">
+                </div>
+                
+                <div id="pwd">
+                    <label for="pwd1">Password:</label>
+                    <input type="password" name="password" id="pwd1" placeholder="Enter Your Password">
+                </div>
+                <div id="dob">
+                    <label for="dob1">DateOfBirth:</label>
+                    <input type="date" name="dob" id="dob1" placeholder="Enter Your DOB">
+                </div>
+                <div id="gender">
+                    <label for="gender1">Gender:</label>
+                    <input type="radio" name="gender" id="gender1" value="male">: Male 
+                    <input type="radio" name="gender" id="gender1" value="female">: Female
+                </div>
+    
+                <div id="btn">
+                    <button class="btn1" type="submit">Signup</button>
+                    <button class="btn1" type="reset">Cancel</button>
+                </div>
+                <div id="login">already have an account<a href="CustomerLogin.html"> Login</a></div> 
+            </div>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

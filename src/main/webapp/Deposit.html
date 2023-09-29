@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Deposit</title>
+	<style>
+		*{
+		    margin: 0%;
+		    padding: 0%;
+		    box-sizing: border-box;
+		    text-transform: uppercase;
+		}
+		
+		#head{
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    color: rgb(8, 8, 8);
+		    text-align: center;
+		    padding: 10px;
+		    box-shadow: 0 0 20px #646161;
+		}
+		
+		
+		#in{
+		    height: 400px;
+		    width: 600px;
+		    box-shadow: 0 0 10px #7a7878;
+		    display: flex;
+		    justify-content:space-evenly;
+		    align-items: center;
+		    flex-direction: column;
+		    border: 1px solid gray;
+		}
+		#main{
+		    height: 700px;
+		    width: auto;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    background-image: url("Image/deposite (2).jpg");
+		    background-size: cover;
+		    background-position: center;
+		}
+		#btn{
+		    width: 350px;
+		    margin-top: 20px;
+		    display: flex;
+		    justify-content: space-around;
+		    align-items: center;
+		}
+		button{
+		    height: 30px;
+		    width: 150px;
+		    border-radius: 7px ;
+		    border-top:none ;
+		    border-left: none;
+		    border-right: none;
+		    box-shadow: 0 0 20px #646161;
+		    font-family: Verdana, Geneva, Tahoma, sans-serif;
+		    font-weight: bold;
+		}
+		button:hover{
+		    background-color: rgb(82, 87, 87);
+		    box-shadow: 0 0 20px #646161;
+		    color: antiquewhite;
+		    height: 35px;
+		    width: 170px;
+		    font-size: 20px;
+		}
+		#amount
+		{
+		    height: 50px;
+		    width: auto;
+		    display: flex;
+		    justify-content: space-around;
+		    align-items: center;
+		
+		}
+		input{
+		    border-top: none;
+		    border-left: none;
+		    border-right: none;
+		    width: 300px;
+		    height: 50px;
+		    background-color: transparent;
+		    color: black;
+		    font-size: 20px;
+		    border-radius: 10px;
+		}
+		::placeholder {
+		  color: rgb(5, 5, 5);
+		  text-align: center;
+		  font-size: 15px;
+		  font-weight: bolder;
+		}
+		label{
+		    font-size: 20px;
+		    color: rgb(0, 0, 0);
+		    min-width: 100px; 
+		    margin-right: 55px;
+		    font-family: fantasy;
+		}
+
+	</style>
+</head>
+<body>
+ <div id="head"><h1>Welcome to Deposit page</h1></div>
+    <div id="main">
+        <div id="in">
+            <form action="deposit" method="post">
+                <label for="amnt">Amount:</label>
+                <input type="text" name="amount" id="amnt" value="0.00" placeholder="Enter Amount">
+                
+                
+                <div id="btn">
+                    <div><button>Add</button></div>
+                    <div><button type="reset">Cancel</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</form>
+</body>
+</html>

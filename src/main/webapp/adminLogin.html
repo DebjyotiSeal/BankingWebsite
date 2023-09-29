@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Login</title>
+<style>
+    *{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+#head{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aquamarine;
+    background: linear-gradient( rgb(105, 102, 102) 40%, rgb(100, 98, 98) 60%, rgb(124, 122, 122) 100%); 
+    box-shadow: 0 0 10px #a5a4a4;
+    z-index: 1;
+}
+#main{
+    height: 700px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#side1{
+    height: 670px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("adminLogin.png");
+    background-size: cover;
+    background-position: center;
+}
+#side2{
+    height: 700px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#in{
+    height: 350px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px #7a7878;
+}
+#mail{
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#pwd{
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#btn{
+    width: 350px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    height: 30px;
+    width: 150px;
+    border-radius: 7px ;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0 0 20px #a39d9d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(82, 87, 87);
+    box-shadow: 0 0 10px #646161;
+    color: antiquewhite;
+    height: 35px;
+    width: 170px;
+    font-size: 20px;
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+::placeholder {
+  color: rgb(41, 38, 38);
+  text-align: center;
+  font-size: 15px;
+}
+label{
+    font-family: fantasy;
+}
+</style>
+</head>
+<body>
+    <div id="head"><h1>Admin Login</h1></div>
+
+    <div id="main">
+
+        <div id="side1"></div>
+
+        <div id="side2">
+
+            <div id="in">
+                <form action="adminLogin">
+
+                    <div id="mail">
+                        <label for="email">Email: </label>
+                        <input type="text" name="email" id="email" placeholder="Enter the email id">
+                    </div>
+
+                    <div id="pwd">
+                        <label for="pwd1">Password: </label>
+                        <input type="text" name="password" placeholder="Enter the password">
+                    </div>
+                  
+                <div id="btn">
+                    <button type="submit">Login</button> 
+                    <button type="reset">Cancel</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</form>
+</body>
+</html>

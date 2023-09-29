@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+    <title>Coustomer Login</title>
+ <style>
+        
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+#main{
+    height: 650px;;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#side{
+    height: 650px;;
+    width: 50%;
+    background-image: url('Image/BankingLogin.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#form{
+    
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 350px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+}
+#head{
+    background: linear-gradient( rgb(7, 7, 7) 40%, rgb(43, 40, 40) 60%, rgb(124, 122, 122) 100%);
+    color: beige;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#custid ,#pwd
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; 
+  
+
+}
+#pwd > label{
+    font-size: 20px;
+    color: dimgray;
+    min-width: 100px; 
+    margin-right: 55px;
+    font-weight: bolder;
+}
+#custid > label{
+    font-size: 20px;
+    color: dimgray;
+    min-width: 100px; 
+    margin-right: 40px;
+    font-weight: bolder;
+}
+#btn{
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button
+{
+    height: 30px;
+    width: 150px;
+    border-radius: 10px ;
+    border-top: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(91, 104, 104);
+    box-shadow: 0 0 20px #646161;
+    color: antiquewhite;
+    height: 35px;
+    width: 170px;
+    font-size: 20px;
+}
+::placeholder {
+  color: dimgray;
+  text-align: center;
+  font-size: small;
+}
+#in{
+    height: 400px;
+    width: 600px;
+    box-shadow: 0 0 20px #7a7878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#out{
+	height: auto;
+	width: auto;
+}
+
+</style>
+</head>
+<body>
+    <div id="head"><h1>Login page</h1></div> 
+    
+    <div id="main">
+        <div id="side" >
+			<div id="out"></div>
+		</div>
+
+        <div id="form">
+            <form action="login">
+            <div id="in">
+                <div id="custid">
+                    <label for="custid1">Coustomer Id:</label>
+                    <input type="text" name="custidd" id="custid1" placeholder="Enter Your Id">
+                </div>
+                
+                <div id="pwd">
+                    <label for="pwd1">Password:</label>
+                    <input type="password" name="pwdd" id="pwd1" placeholder="Enter Your Password">
+                </div>
+
+                <div id="btn">
+                    <div id="submit"><button type="submit">Login</button></div>
+                    <div id="reset"><button type="reset">Cancel</button></div>
+                </div> 
+                <div id="signup">new user click on<a href="customersignup.html">Signup</a></div> 
+            </div>
+                
+            </form> 
+        </div>
+    </div>
+</body>
+</html>
+
+
+

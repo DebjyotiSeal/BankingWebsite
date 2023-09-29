@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Withdraw</title>
+<style>
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aquamarine;
+    background: linear-gradient( rgb(7, 7, 7) 40%, rgb(43, 40, 40) 60%, rgb(124, 122, 122) 100%);
+}
+body{
+    background-image: url("Image/withdraw (1).jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px #7a7878;
+}
+#main{
+    height: 700px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#side1{
+    height: 650px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#side2{
+    height: 650px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#in{
+    height: 350px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px #7a7878;
+}
+#btn{
+    width: 350px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    height: 30px;
+    width: 150px;
+    border-radius: 7px ;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0 0 20px #646161;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(82, 87, 87);
+    box-shadow: 0 0 20px #646161;
+    color: antiquewhite;
+    height: 35px;
+    width: 170px;
+    font-size: 20px;
+}
+#amount
+{
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+::placeholder {
+  color: rgb(41, 38, 38);
+  text-align: center;
+  font-size: 15px;
+}
+#amnt > label{
+    font-size: 20px;
+    color: dimgray;
+    min-width: 100px; 
+    margin-right: 55px;
+}
+label{
+    font-family: fantasy;
+}
+</style>
+
+</head>
+<body>
+    <div id="head"><h1>Welcome to withdraw page</h1></div>
+<div id="main">
+    <div id="side1"></div>
+    <div id="side2">
+
+        <div id="in">
+            <form action="withdraw" method="post">
+
+                <div id="amount">
+                    <label for="amnt">Amount:</label>
+                    <input type="text" name="amount" id="amnt" placeholder="Enter your amount">
+                </div>
+            
+            <div id="btn">
+                <button type="submit">Submit</button> 
+                <button type="reset">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</form>
+</body>
+</html>
